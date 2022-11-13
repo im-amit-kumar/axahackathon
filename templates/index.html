@@ -1,0 +1,66 @@
+{% extends "base.html" %} {% block content %}
+
+<head>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+
+        <title> AXA GOBO AI HACKATHON </title>
+
+        <meta name="theme-color" content="#ffffff">
+
+        <style>
+        body
+        {
+        background-repeat:no-repeat;
+        background-attached:fixed;
+        background-size:cover;
+        background-image:url({{url_for('static',filename='aibg.webp')}})
+        </style>
+
+</head>
+
+
+<body>
+
+
+<center>
+    <img style="max-width: 10%; height: auto;" src="{{url_for('static',filename='axa.png')}}"></img>
+
+
+    <b><u>
+        <h2>Signature Verification AGAINST GROUND TRUTH</h2><br>
+    </b></u>
+
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Please Upload Your Signature
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h2 id="result">
+        <span> </span>
+    </h2>
+
+</div>
+
+
+</center>
+
+
+{% endblock %}
+</body>
