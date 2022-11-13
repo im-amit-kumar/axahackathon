@@ -2,7 +2,7 @@
 
 # D:\College Final Year\maleria detection\app.py: 15
 Flask 
-python-3.7.6
+
 # D:\College Final Year\maleria detection\application.py: 12
 Pillow 
 
