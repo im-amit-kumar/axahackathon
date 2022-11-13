@@ -18,7 +18,7 @@ numpy
 
 # D:\College Final Year\maleria detection\app.py: 10,11,12
 # D:\College Final Year\maleria detection\application.py: 9,10
-tensorflow==2.5.0
+tensorflow==2.3.0
 gunicorn
 #cudatoolkit
 #cudnn
